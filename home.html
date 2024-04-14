@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessible Healthcare Website</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f9ff; /* Light blue background */
+  }
+  .header {
+    background-color: #007BFF; /* Blue header */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  .nav-button {
+    background-color: #FFD700; /* Gold buttons */
+    border: none;
+    color: black; /* Changed for better contrast */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  .content img {
+    width: 50%;
+    border-radius: 12px;
+  }
+  .footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .form-section {
+    margin: 20px 0;
+  }
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Healthcare Products</h1>
+  <a href="#" class="nav-button">Home</a>
+  <a href="#" class="nav-button">Products</a>
+</div>
+
+<div class="content">
+  <h2>Our Departments</h2>
+  <img src="healthcare-image.jpg" alt="Healthcare department image">
+  <p>Explore our wide range of healthcare products designed to cater to your health needs.</p>
+</div>
+
+<div class="form-section">
+  <h3>Contact Us</h3>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your name.." aria-label="Name">
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your email.." aria-label="Email">
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:200px" aria-label="Message"></textarea>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<div class="footer">
+  <p>&copy; 2023 Healthcare Products. All rights reserved.</p>
+</div>
+
+<script>
+// Add any JavaScript here if needed
+</script>
+
+</body>
+</html>
